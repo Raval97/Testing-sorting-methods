@@ -1,0 +1,86 @@
+Nazwa metody sortowania 	|Dlugosc tablicy|Rodzaj uporzadkowania tablicy|Liczba porownan|Liczba przestawien
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie babelkowe  	|          100           | liczby losowe                              |4950                     |2780
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie babelkowe  	|          100           | liczby uporzadkowane               |4950                     |0
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie babelkowe  	|          100           | l. odwrotnie uporzadkowane    |4950                     |4950
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie babelkowe  	|          100           | l. czesciwo uporzadkowane     |4950                     |95
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Hore'a      |          100           | liczby losowe                              |702                     |190
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Hore'a      |          100           | liczby uporzadkowane               |543                     |63
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Hore'a      |          100           | l. odwrotnie uporzadkowane    |498                     |112
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Hore'a      |          100           | l. czesciwo uporzadkowane     |572                     |60
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Lomuto     |          100           | liczby losowe                              |1392                     |416
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Lomuto     |          100           | liczby uporzadkowane               |5047                     |196
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Lomuto     |          100           | l. odwrotnie uporzadkowane    |5049                     |2500
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Lomuto     |          100           | l. czesciwo uporzadkowane     |2753                     |225
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie przez kopcowanie|          100           | liczby losowe                              |1120                     |568
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie przez kopcowanie|          100           | liczby uporzadkowane               |1336                     |640
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie przez kopcowanie|          100           | l. odwrotnie uporzadkowane    |978                     |516
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie przez kopcowanie|          100           | l. czesciwo uporzadkowane     |1320                     |637
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie babelkowe  	|         1000          | liczby losowe                              |499500                     |233431
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie babelkowe  	|         1000          | liczby uporzadkowane               |499500                     |0
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie babelkowe  	|         1000          | l. odwrotnie uporzadkowane    |499500                     |466665
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie babelkowe  	|         1000          | l. czesciwo uporzadkowane     |499500                     |50
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Hore'a      |         1000          | liczby losowe                              |7289                     |3680
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Hore'a      |         1000          | liczby uporzadkowane               |7269                     |2949
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Hore'a      |         1000          | l. odwrotnie uporzadkowane    |6808                     |3417
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Hore'a      |         1000          | l. czesciwo uporzadkowane     |7225                     |2944
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Lomuto     |         1000          | liczby losowe                              |43047                     |5418
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Lomuto     |         1000          | liczby uporzadkowane               |439850                     |1930
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Lomuto     |         1000          | l. odwrotnie uporzadkowane    |48692                     |14922
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Lomuto     |         1000          | l. czesciwo uporzadkowane     |433250                     |2882
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie przez kopcowanie|         1000          | liczby losowe                              |18208                     |8598
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie przez kopcowanie|         1000          | liczby uporzadkowane               |16899                     |8109
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie przez kopcowanie|         1000          | l. odwrotnie uporzadkowane    |16117                     |7811
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie przez kopcowanie|         1000          | l. czesciwo uporzadkowane     |17059                     |8166
+
+WNIOSKI:
+1.Sortowanie babelkowe metoda wahadlowa: jest zdcydowanie najwolniejsza metoda sortowania
+  z posrod wykorzystanych (gdyz ogolnie jest prawie dwa razy szybsza od podstawowej poniewaz
+  sprawdza elementy w dwie strony), glownie dlatego ze porownujeze soba wszystkie elementy
+  tablicy totez ma najwieksza liczbe porownan i przestawien (wyjatek tablica uszeregowana,
+  gdzie nieprzestawia zadnej wartosci)
+2.Sortowanie szybkie za pomoca algorytmu podzialu Hoare'a: jest zdecydowanie najszybsza
+  metod sortowaniawykorzystuje metode dziel i zwyciezej dzieki czemu robi najmniej porownan,
+  a co za tym idzie ma najmniejsza liczbe przestawien
+3.Sortowanie szybkie za pomoca algorytmu podzialu Lomuto : rownie szybka metoda co poprzednia
+  opierajaca sie na  tej samej zasadzie,lecz w przeciwienstwie do algorytmu Hore'a wykonuje
+  znacznie wieksza liczbe porownan gdyz do podzielenie jednego segmentu funkcja porownuje elementy
+  w jednym kierunku podczas gdy 'wskazniki' w drugiej metodzie przesuwaja sie od krawedzi do
+  srodka, skutkuje to rowniez wieksza iloscia przestawien
+4.Sortowanie przez kopcowanie: metoda srednio efektywna, obiektywnie wykonuje nie duzo liczbe
+  porownan w stosunku do metody BubbleSort i QiuckSort Lomuto lecz w porownaniu z ta druga ma
+  wieksza liczbe przestawien, wynika to z faktu iz w metodzie kpocowania przy jednym przejsciu kopca
+  znajdujemy jeden element najwiekszy, natomiast QuickSort z kazdym krokiem zmniejsza tablice so
+  sortowania nawet o polowe, przez co tak duza liczba porownan jak wystepuje w metodzie Lomuto nie
+  skutkuje znacznymwzrostem liczby porownan jak ma miejsce chcoiazby w metodzie babelkowej

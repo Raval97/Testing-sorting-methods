@@ -1,0 +1,9 @@
+﻿  Source.cpp
+  libFiles.cpp
+c:\users\rafał\desktop\studia\c++\2 semestr\zadanie 10  12lab\project11\libfiles.cpp(217): warning C4244: "=": konwersja z "double" do "__int64", możliwa utrata danych
+c:\users\rafał\desktop\studia\c++\2 semestr\zadanie 10  12lab\project11\libfiles.cpp(222): warning C4244: "=": konwersja z "__int64" do "int", możliwa utrata danych
+c:\users\rafał\desktop\studia\c++\2 semestr\zadanie 10  12lab\project11\libfiles.cpp(223): warning C4244: "=": konwersja z "__int64" do "int", możliwa utrata danych
+c:\users\rafał\desktop\studia\c++\2 semestr\zadanie 10  12lab\project11\libfiles.cpp(225): warning C4244: "=": konwersja z "__int64" do "int", możliwa utrata danych
+c:\users\rafał\desktop\studia\c++\2 semestr\zadanie 10  12lab\project11\libfiles.cpp(192): warning C4101: "x": lokalna zmienna, do której nie istnieje odwołanie
+  Generowanie kodu...
+  Project11.vcxproj -> C:\Users\Rafał\Desktop\STUDIA\c++\2 semestr\zadanie 10  12lab\x64\Debug\Project11.exe

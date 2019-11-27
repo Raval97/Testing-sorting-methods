@@ -1,0 +1,24 @@
+Nazwa metody sortowania 	|Dlugosc tablicy|Rodzaj uporzadkowania tablicy|Liczba porownan|Liczba przestawien
+--------------------------------------------|-----------------------|----------------------------------------------|-------------------------|-------------------------------
+sortowanie szybkie Lomuto     |         1000          | liczby losowe                              |43047                     |5418
+
+WNIOSKI:
+1.Sortowanie babelkowe metoda wahadlowa: jest zdcydowanie najwolniejsza metoda sortowania
+  z posrod wykorzystanych (gdyz ogolnie jest prawie dwa razy szybsza od podstawowej poniewaz
+  sprawdza elementy w dwie strony), glownie dlatego ze porownujeze soba wszystkie elementy
+  tablicy totez ma najwieksza liczbe porownan i przestawien (wyjatek tablica uszeregowana,
+  gdzie nieprzestawia zadnej wartosci)
+2.Sortowanie szybkie za pomoca algorytmu podzialu Hoare'a: jest zdecydowanie najszybsza
+  metod sortowaniawykorzystuje metode dziel i zwyciezej dzieki czemu robi najmniej porownan,
+  a co za tym idzie ma najmniejsza liczbe przestawien
+3.Sortowanie szybkie za pomoca algorytmu podzialu Lomuto : rownie szybka metoda co poprzednia
+  opierajaca sie na  tej samej zasadzie,lecz w przeciwienstwie do algorytmu Hore'a wykonuje
+  znacznie wieksza liczbe porownan gdyz do podzielenie jednego segmentu funkcja porownuje elementy
+  w jednym kierunku podczas gdy 'wskazniki' w drugiej metodzie przesuwaja sie od krawedzi do
+  srodka, skutkuje to rowniez wieksza iloscia przestawien
+4.Sortowanie przez kopcowanie: metoda srednio efektywna, obiektywnie wykonuje nie duzo liczbe
+  porownan w stosunku do metody BubbleSort i QiuckSort Lomuto lecz w porownaniu z ta druga ma
+  wieksza liczbe przestawien, wynika to z faktu iz w metodzie kpocowania przy jednym przejsciu kopca
+  znajdujemy jeden element najwiekszy, natomiast QuickSort z kazdym krokiem zmniejsza tablice so
+  sortowania nawet o polowe, przez co tak duza liczba porownan jak wystepuje w metodzie Lomuto nie
+  skutkuje znacznymwzrostem liczby porownan jak ma miejsce chcoiazby w metodzie babelkowej
